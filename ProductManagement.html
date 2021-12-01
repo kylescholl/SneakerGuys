@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Product Management Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <link href="css/stylesheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="js/GenerateHeader.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Product Managament</h2>
+            </div>
+        </div>
+        <form id="pForm" class="form-center">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Product ID</label>
+                        <input type="number" class="form-control" id="p_id" name="p_id" placeholder="Product ID" tabindex="1" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label class="form-label" for="email">Name</label>
+                        <input type="text" class="form-control" id="p_name" name="p_name" placeholder="Product Name" tabindex="2" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Brand</label>
+                        <input type="text" class="form-control" id="p_brand" name="p_brand" placeholder="Brand" tabindex="3" required>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label class="form-label" for="message">Price</label>
+                        <input type="number" class="form-control" id="p_price" name="p_price" placeholder="Price..." tabindex="4" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label class="form-label" for="message">Category</label>
+                        <input type="text" class="form-control" id="p_cat" name="p_category" placeholder="Select Category (dynamic dropdown later)" tabindex="5" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label class="form-label" for="message">Color / Theme</label>
+                        <input type="text" class="form-control" id="p_theme" name="p_theme" placeholder="Colorway..." tabindex="6" required>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label class="form-label" for="message">Display Image Local Source Location</label>
+                        <input type="text" class="form-control" id="p_src" name="p_source" placeholder="Path..." tabindex="7" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label class="form-label" for="message">Description (Short)</label>
+                    <textarea rows="4" cols="50" name="p_desc_short" class="form-control" id="p_desc_short" placeholder="Description..." tabindex="8" required></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label class="form-label" for="message">Description (Long)</label>
+                    <textarea rows="8" cols="50" name="p_desc_long" class="form-control" id="p_desc_long" placeholder="Description..." tabindex="9" required></textarea>
+                </div>
+            </div>
+        </form>
+        <div class="text-center">
+            <!-- class="btn btn-start-order" -->
+            <button type="submit" class="btn btn-custom" onclick="submitForm()">Send</button>
+        </div>
+    </div>
+    <div class="display-json">
+        Product ID:
+        <p id="j_id"></p>
+        Name:
+        <p id="j_name"></p>
+        Brand:
+        <p id="j_brand"></p>
+        Price:
+        <p id="j_price"></p>
+        Category:
+        <p id="j_cat"></p>
+        Theme:
+        <p id="j_theme"></p>
+        Image Source:
+        <p id="j_src"></p>Description (Short):
+        <p id="j_desc_short"></p>Description (Long):
+        <p id="j_desc_long"></p>
+        <br />
+    </div>
+    <script src="js/ProductManagement.js"></script>
+</body>
+
+</html>
