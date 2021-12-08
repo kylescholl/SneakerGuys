@@ -1,29 +1,27 @@
 function NewUser($scope) {
-	console.log("A");
-	$scope.submit = function () {
-		console.log("B");
-		//Make sure to change the host and port to match the URL
-		var query = "http://localhost:3000/create/newuser?";
-		query += "userName=" + $scope.UserName;
-		query += "&emailAddress=" + $scope.EmailAddress;
-		query += "&password=" + $scope.Password;
+    $scope.submit = function () {
+        //Make sure to change the host and port to match the URL
+        var query = "http://localhost:3000/create/user?";
+        query += "userName=" + $scope.UserName;
+        query += "&emailAddress=" + $scope.EmailAddress;
+        query += "&password=" + $scope.Password;
 
-		console.log(query);
+        console.log(query);
 
-		$.ajax({
-			url: query,
-			crossDomain: true,
-			dataType: "json",
-			type: "GET",
-		})
-			.done(function (json) {
-				$scope.response = json.result;
-				$scope.$apply();
-			})
-			.fail(function () {
-				alert("Error");
-			});
-	};
+        $.ajax({
+            url: query,
+            crossDomain: true,
+            dataType: "json",
+            type: "GET",
+        })
+            .done(function (json) {
+                $scope.response = json.result;
+                $scope.$apply();
+            })
+            .fail(function () {
+                alert("Error");
+            });
+    };
 }
 
 /*
