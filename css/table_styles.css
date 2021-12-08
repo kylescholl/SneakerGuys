@@ -1,0 +1,103 @@
+:root {
+    --blue-bg: #6c7ae0;
+    --grey-bg: #222222;
+    --medium-gray-2: #212529;
+}
+
+body {
+    background-color: white;
+}
+
+.chart-form {
+    max-width: 550px;
+    margin: 0 auto;
+    background: var(--medium-gray-2);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    width: 48%;
+}
+
+.input-fields,
+.input {
+    font-style: normal !important;
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--blue-bg) !important;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+
+.input::placeholder {
+    font-style: italic !important;
+}
+
+.input::before {
+    content: "test";
+}
+
+.submitButton,
+.dataBankLogo,
+.main-title {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 3px;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+}
+
+.createButton {
+    height: 35px;
+    cursor: pointer;
+
+    background: var(--blue-bg);
+    color: black;
+    margin: 20px 0;
+    border-radius: 30px;
+}
+
+.createButton:hover {
+    transform: scale(1.05);
+}
+input:required:focus:valid {
+    background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg")
+        no-repeat 95% 50% var(--blue-bg);
+    background-size: 25px;
+}
+
+input:focus:invalid {
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg")
+        no-repeat 95% 50% rgb(255, 88, 66);
+    /* color: var(--grey-bg) !important; */
+    background-size: 25px;
+}
+
+input:focus:invalid::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--grey-bg);
+    opacity: 1; /* Firefox */
+}
+
+.grey-bg {
+    background-color: var(--medium-gray-2);
+}
