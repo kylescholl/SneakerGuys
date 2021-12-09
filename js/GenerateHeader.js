@@ -3,10 +3,10 @@ navbar = `
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="Home.html">Home</a>
+				<a class="nav-link" href="index.html">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="Home.html">Store</a>
+				<a class="nav-link" href="index.html">Store</a>
 			</li>
 			<li class="nav-item dropdown disabled">
 				<a

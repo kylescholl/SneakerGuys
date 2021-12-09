@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Testing Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <link href="css/stylesheet.css" rel="stylesheet" />
+        <link href="css/table_styles.css" rel="stylesheet" />
+    </head>
+
+    <body data-ng-app>
+        <script src="js/GenerateHeader.js"></script>
+
+        <input data-ng-model="test_input" class="form-control" />
+        <button ng-click="testA()" data-ng-controller="Testing">Test A</button>
+        <button ng-click="testB()" data-ng-controller="Testing">Test B</button>
+        <p>Request: {{ request }}</p>
+        <p>Response: {{ response }}</p>
+
+        <script type="text/javascript" src="js/test.js"></script>
+    </body>
+</html>
