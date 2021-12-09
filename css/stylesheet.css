@@ -1,184 +1,196 @@
 @charset "utf-8";
 :root {
-    /* Color Scheme HEX Variables here */
-    --color1: #f5f5f5;
-    --medium-grey: #444444;
-    --medium-gray-2: #212529;
-    --purple: #6645eb;
-    --color3: #343a40;
-    --color4: #171717;
-    --color5: #da0037;
-    --white: #ededed;
-    --color-bg: #f8a3a4;
-    --font-family: "Poppins-Regular", "Gill Sans", "Gill Sans MT", Calibri,
-        "Trebuchet MS", sans-serif;
+	/* Color Scheme HEX Variables here */
+	--color1: #f5f5f5;
+	--medium-grey: #444444;
+	--medium-gray-2: #212529;
+	--purple: #6645eb;
+	--color3: #343a40;
+	--color4: #171717;
+	--color5: #da0037;
+	--white: #ededed;
+	--color-bg: #f8a3a4;
+	--font-family: "Poppins-Regular", "Gill Sans", "Gill Sans MT", Calibri,
+		"Trebuchet MS", sans-serif;
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--white);
+	font-family: var(--font-family);
+	background-color: var(--white);
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: var(--font-family);
-    color: var(--medium-grey);
+	font-family: var(--font-family);
+	color: var(--medium-grey);
 }
 
 p {
-    font-family: var(--font-family);
-    font-size: large;
-    font-weight: normal;
+	font-family: var(--font-family);
+	font-size: large;
+	font-weight: normal;
 }
 
 div {
-    font-family: var(--font-family);
-    color: var(--medium-grey);
+	font-family: var(--font-family);
+	color: var(--medium-grey);
 }
 
 .form-input-container {
-    margin: 0 auto;
-    width: 45%;
+	margin: 0 auto;
+	width: 45%;
 }
 
 label {
-    color: var(--medium-grey);
-    /* text-decoration: underline; */
-    font-family: var(--font-family);
-    font-style: normal;
-    font-size: 25px;
-    font-weight: bolder;
+	color: var(--medium-grey);
+	/* text-decoration: underline; */
+	font-family: var(--font-family);
+	font-style: normal;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+img {
+	/* size: 350px !important; */
+	width: 354px !important;
+	height: 180px !important;
+}
+
+.card {
+	/* width: 30% !important;
+	width: 30% !important; */
+	/* height: 31.563rem; */
 }
 
 img.card {
-    /* width:inherit; */
-    max-width: 400px;
-    max-height: 400px;
-    width: auto;
-    height: auto;
+	/* width:inherit; */
+	max-width: 400px;
+	max-height: 400px;
+	/* width: auto;
+	height: auto; */
 }
 
 img.product-page {
-    /* width:inherit; */
-    /* max-width: 400px;
+	/* width:inherit; */
+	/* max-width: 400px;
     max-height: 400px; */
-    size: inherit;
+	size: inherit;
 }
 
 .container-form {
-    margin-left: 100%;
-    margin-right: 100%;
+	margin-left: 100%;
+	margin-right: 100%;
 }
 
 .item-p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: normal;
+	font-style: normal;
+	font-weight: normal;
+	font-size: normal;
 }
 
 .text--small {
-    font-size: small;
+	font-size: small;
 }
 
 .text--white {
-    color: var(--white) !important;
+	color: var(--white) !important;
 }
 
 .btn-center {
-    margin-left: 50%;
-    margin-right: 50%;
+	margin-left: 50%;
+	margin-right: 50%;
 }
 
 .form-center {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 }
 
 .center {
-    margin-left: 100%;
-    margin-right: 100%;
+	margin-left: 100%;
+	margin-right: 100%;
 }
 
 .form-item-solo {
-    width: 49%;
+	width: 49%;
 }
 
 .display-json {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 }
 
 .carousel-inner > .carousel-item > img {
-    width: 100px !important;
-    height: 100px !important;
+	width: 100px !important;
+	height: 100px !important;
 }
 
 .bg-dark {
-    background-color: var(--medium-grey);
-    color: var(--white);
+	background-color: var(--medium-grey);
+	color: var(--white);
 }
 
 .bg-purple {
-    background-color: var(--purple);
-    color: var(--white);
+	background-color: var(--purple);
+	color: var(--white);
 }
 
 .theme-navbar {
-    background-color: var(--medium-grey);
-    color: var(--white);
+	background-color: var(--medium-grey);
+	color: var(--white);
 }
 
 /* bbb */
 
 textarea {
-    resize: none;
+	resize: none;
 }
 
 .form-label {
-    font-size: 12px;
-    color: var(--purple);
-    margin: 0;
-    display: block;
-    opacity: 1;
+	font-size: 12px;
+	color: var(--purple);
+	margin: 0;
+	display: block;
+	opacity: 1;
 }
 
 .form-control {
-    border-radius: 0;
-    border-color: #ccc;
-    border-width: 0 0 2px 0;
-    border-style: none none solid none;
-    box-shadow: none;
+	border-radius: 0;
+	border-color: #ccc;
+	border-width: 0 0 2px 0;
+	border-style: none none solid none;
+	box-shadow: none;
 }
 
 .form-control:focus {
-    box-shadow: none;
-    border-color: var(--purple);
+	box-shadow: none;
+	border-color: var(--purple);
 }
 
 div.carousel-item > img {
-    max-width: 500px;
-    max-height: 500px;
+	max-width: 500px;
+	max-height: 500px;
 }
 
 .btn-custom {
-    background: 0 0 var(--white);
-    border: 1px solid var(--medium-grey);
-    border-radius: 2px;
-    color: var(--medium-grey);
-    font-family: var(--font-family);
-    font-size: large;
-    line-height: inherit;
-    margin: 30px 0;
-    padding: 10px 50px;
-    text-transform: capitalize;
-    transition: all 0.25s ease 0s;
+	background: 0 0 var(--white);
+	border: 1px solid var(--medium-grey);
+	border-radius: 2px;
+	color: var(--medium-grey);
+	font-family: var(--font-family);
+	font-size: large;
+	line-height: inherit;
+	margin: 30px 0;
+	padding: 10px 50px;
+	text-transform: capitalize;
+	transition: all 0.25s ease 0s;
 }
 
 .btn-custom:hover,
 .btn-custom:active,
 .btn-custom:focus {
-    border-color: var(--purple);
-    color: var(--purple);
+	border-color: var(--purple);
+	color: var(--purple);
 }

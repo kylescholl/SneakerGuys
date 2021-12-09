@@ -1,64 +1,55 @@
 function Testing($scope) {
-    $scope.testA = function () {
-        console.log("Test A");
+	$scope.userName = "kscholl";
+	$scope.productID = 101;
+	$scope.productName = "Yeezy 350 v2 Boost Triple";
 
-        var query = "http://localhost:3000/read/products/";
-        query += $scope.test_input;
+	$scope.A = function () {
+		console.log("A");
 
-        console.log(query);
+		var query = "http://localhost:3000/read/products/";
+		query += $scope.test_input;
 
-        // $scope.$apply();
-        // $.ajax({ url: query, crossDomain: true, dataType: "json", type: "GET" })
-        //     .done(function (json) {
-        //         $scope.studentID = json.StudentID;
-        //         $scope.studentName = json.StudentName;
-        //         $scope.studentSSN = json.StudentSSN;
-        //         $scope.studentEmail = json.StudentEmail;
-        //         $scope.studentPhone = json.StudentPhone;
-        //         $scope.$apply();
-        //     })
-        //     .fail(function () {
-        //         alert("Error");
-        //     });
+		console.log(query);
 
-        $scope.request = query;
-        // $scope.$apply();
-        $.ajax({
-            url: query,
-            crossDomain: true,
-            dataType: "json",
-            type: "GET",
-        })
-            .done(function (json) {
-                $scope.response = json.result;
-                $scope.$apply();
-            })
-            .fail(function () {
-                alert("Error");
-            });
-    };
+		$scope.request = query;
+		// $scope.$apply();
+		$.ajax({
+			url: query,
+			crossDomain: true,
+			dataType: "json",
+			type: "GET",
+		})
+			.done(function (json) {
+				$scope.response = json.result;
+				$scope.$apply();
+			})
+			.fail(function () {
+				alert("Error");
+			});
+	};
 
-    $scope.testB = function () {
-        console.log("Test B");
+	$scope.B = function () {
+		console.log("B");
 
-        var query = "http://localhost:3000/read/products/";
+		var query = "http://localhost:3000/create/cart?";
+		query += "userName=" + $scope.userName;
+		query += "&productID=" + $scope.productID;
+		query += "&productName=" + $scope.productName;
 
-        console.log(query);
+		console.log(query);
 
-        $scope.request = query;
-        // $scope.$apply();
-        $.ajax({
-            url: query,
-            crossDomain: true,
-            dataType: "json",
-            type: "GET",
-        })
-            .done(function (json) {
-                $scope.response = json.result;
-                $scope.$apply();
-            })
-            .fail(function () {
-                alert("Error");
-            });
-    };
+		$.ajax({
+			url: query,
+			crossDomain: true,
+			dataType: "json",
+			type: "GET",
+		})
+			.done(function (json) {
+				$scope.response = json.result;
+				$scope.$apply();
+			})
+			.fail(function () {
+				alert("Error");
+			});
+	};
 }
